@@ -87,6 +87,7 @@ html {
 
 .section-hero {
   position: relative;
+  margin-bottom: 16rem;
 }
 
 .hero-overlay {
@@ -138,6 +139,73 @@ html {
   border-bottom: 2px solid #ffcc33;
 }
 
-.learn-more-hero:hover, .learn-more-hero:active{
+.learn-more-hero:hover,
+.learn-more-hero:active {
   border-bottom: 2px solid #363230;
+}
+.cards {
+  display: flex;
+  padding: 0 11.2rem;
+  gap: 3.2rem;
+  max-width: 140rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  position: relative;
+}
+
+.card-img {
+  height: 25rem;
+}
+
+.card h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+  padding-top: 2.4rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  font-weight: 600;
+  color: #363230;
+  position: relative;
+}
+
+.card h2:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 20%;
+  background-color: #ffcc33;
+  margin-left: 15px;
+  top: 120%;
+  left: 3%;
+}
+
+.cards p {
+  padding-top: 2.4rem;
+  font-size: 1.6rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  color: #363230;
+}
+
+.card a:link,
+.card a:visited {
+  font-weight: 500;
+  padding-top: 2.4rem;
+  font-size: 1.6rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  color: #003882;
+  letter-spacing: 1.8px;
+  text-decoration: none;
+
+  padding-bottom: 2.4rem;
+}
+
+.card a:hover,
+.card a:active {
+  text-decoration: underline;
 }
