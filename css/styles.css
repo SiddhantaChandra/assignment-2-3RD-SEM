@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.navigation-bar {
+  padding: 1.6rem 11.2rem 1.6rem 11.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 7rem;
+}
+
+.nav-links {
+  display: flex;
+
+  font-family: inherit;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+  padding: 1.2rem 2.4rem;
+  color: #003882;
+  text-decoration: none;
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+  color: #003882;
+  background-color: #eee;
+}
+
+.secondary-nav {
+  padding: 0 11.2rem;
+  background-color: #003882;
+  display: flex;
+
+}
+
+.secondary-nav-link{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.secondary-nav-link img{
+    display: inline;
+    height: 1rem;
+    width: 1rem;
+    filter: invert(100%) sepia(0%) saturate(25%) hue-rotate(70deg) brightness(108%) contrast(108%);
+}
+
+.secondary-nav-link:hover .dropdown-icon{
+  transform: rotate(180deg);
+}
+
+.secondary-nav-link:link,
+.secondary-nav-link:visited {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1.6rem 2rem;
+}
+
+.secondary-nav-link:hover,
+.secondary-nav-link:active {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #4776aa;
+}
+
