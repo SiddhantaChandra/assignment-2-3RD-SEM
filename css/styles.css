@@ -137,17 +137,21 @@ html {
   text-decoration: none;
   padding-top: 2.4rem;
   border-bottom: 2px solid #ffcc33;
+
+  transition: all 0.5s;
 }
 
 .learn-more-hero:hover,
 .learn-more-hero:active {
   border-bottom: 2px solid #363230;
+  transition:all 0.35s;
 }
 .cards {
   display: flex;
   padding: 0 11.2rem;
   gap: 3.2rem;
   max-width: 140rem;
+  padding-bottom: 6rem;
 }
 
 .card {
@@ -208,4 +212,35 @@ html {
 .card a:hover,
 .card a:active {
   text-decoration: underline;
+}
+
+.section-bca-hero{
+  padding-top: 5.6rem;
+  padding-bottom: 6rem;
+}
+
+.bca-hero-box{
+  padding: 0 11.2rem;
+  display: flex;
+  gap: 6.4rem;
+}
+
+.bca-hero-text-box h1{
+  display: inline-flex;
+  font-size: 3.2rem;
+  color: #363230;
+  border-bottom: #ffcc33 3px solid;
+}
+
+.bca-p-1{
+  padding-top: 3.2rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.8rem;
+  color: #363230;
+}
+
+.bca-p-2{
+  font-size: 1.8rem;
+  color: #363230;
+  padding-bottom: 4.8rem;
 }
