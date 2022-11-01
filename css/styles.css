@@ -4,6 +4,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -144,7 +145,7 @@ html {
 .learn-more-hero:hover,
 .learn-more-hero:active {
   border-bottom: 2px solid #363230;
-  transition:all 0.35s;
+  transition: all 0.35s;
 }
 .cards {
   display: flex;
@@ -214,33 +215,177 @@ html {
   text-decoration: underline;
 }
 
-.section-bca-hero{
+.section-bca-hero {
   padding-top: 5.6rem;
   padding-bottom: 6rem;
 }
 
-.bca-hero-box{
+.bca-hero-box {
   padding: 0 11.2rem;
   display: flex;
   gap: 6.4rem;
 }
 
-.bca-hero-text-box h1{
+.bca-hero-text-box h1 {
   display: inline-flex;
   font-size: 3.2rem;
   color: #363230;
   border-bottom: #ffcc33 3px solid;
 }
 
-.bca-p-1{
+.bca-p-1 {
   padding-top: 3.2rem;
   padding-bottom: 0.8rem;
   font-size: 1.8rem;
   color: #363230;
 }
 
-.bca-p-2{
+.bca-p-2 {
   font-size: 1.8rem;
   color: #363230;
   padding-bottom: 4.8rem;
 }
+
+.fest-hero-img {
+  width: 100%;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: #eea71b;
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-family: 'Merriweather';
+  font-weight: 700;
+  color: #363230;
+}
+
+.ticker__item img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.fest-description-box {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  padding: 3.2rem 11.2rem;
+  column-gap: 2.4rem;
+}
+
+.col--2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2.4rem;
+}
+
+/* .row--1 {
+  background-color: #003882;
+  background-image: url(/img/FEST/article/agnivo-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
+.row--1 {
+  /* background-color: #003882; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.6rem;
+}
+
+.col-1--left {
+  background-image: url(/img/FEST/article/agnivo-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.col-1--right {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.col-1--right h1 {
+  font-size: 3.2rem;
+  font-family: 'Merriweather', serif;
+}
+
+.col-1--right p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #363230;
+}
+
+.row--2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-2--left {
+  background-image: url(/img/FEST/article/agnivo-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.col-2--right {
+  background-image: url(/img/FEST/article/agnivo-3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 1600px) {
+  .col-1--right h1 {
+    font-size: 4.8rem;
+    font-family: 'Merriweather', serif;
+  }
+
+  .col-1--right p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #363230;
+  }
+} ;
