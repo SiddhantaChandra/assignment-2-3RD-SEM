@@ -388,4 +388,51 @@ html {
     font-weight: 500;
     color: #363230;
   }
-} ;
+}
+
+.section-facilities {
+  padding: 0 11.2rem;
+}
+
+.section-facilities h1 {
+  font-size: 3.2rem;
+  color: #363230;
+}
+
+.rows-fs {
+  margin: 0 auto;
+  max-width: 144rem;
+  padding-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.rows-fs h1 {
+  color: #363230;
+  font-size: 4rem;
+}
+
+.row--f {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.row--f h2 {
+  font-size: 3.2rem;
+  padding-bottom: 2.4rem;
+  color: #363230;
+  font-family: 'Merriweather';
+}
+
+.row--f p {
+  font-size: 1.8rem;
+}
+
+.f--even {
+  text-align: right;
+}
+
+.row--f img {
+  height: 35rem;
+}
